@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <title>3D Vizualizace Interiéru</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kvalitní fotorealistické vizualizace Vašeho interiéru.">
+        
+        <!-- CSS styles -->
+    <link href="css/personal-website.css" rel="stylesheet">
+
+        <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="favicon.ico" >
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"   href="apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed"                 href="apple-touch-icon-57-precomposed.png">
+                            
+  </head>
+
+  <body>
+      
+     <div class="mount">   <!-- Light grey background -->
+        
+                
+        <div class="header">    <!-- Grey panel on the top -->
+      
+      
+          <div  style="font-weight: bold" class="logo">
+              <h2><img src="img/logo.png" alt="logo" style="transform: translate(0%, 30%);"> Marek Moravec</h2>
+          </div> 
+         
+          <div class="nadpis">
+              <h1>3D Vizualizace Interiéru</h1>
+          </div>  <hr />
+                     
+          <header>     <!-- Navigation bar -->
+            
+            <div class="button">
+              <a href="index.html">vizualizace</a> 
+            </div>
+            
+            <div class="button">
+              <a href="sluzby.html">služby</a>
+            </div>
+          
+            <div class="button">
+              <a href="omne.html" style="text-decoration: overline">o mně</a>
+            </div>
+            
+          </header>
+                    
+          
+        </div> 
+    
+        
+       <div class="text">
+          
+          <p><strong>Marek Moravec</strong> (1990) – vystudoval bakalářský program Architektura a urbanismus na <i>Fakultě arhitektury ČVUT</i> v Praze. Vizualizacím a 3D animacím se věnuje od posledního ročníku gymnázia. Od srpna 2013 pracuje jako externí 3D designér pro mezinárodní společnost <i>LEGO</i>. Také spolupracuje s architekty a bytovými designéry na široké škále zakázek. Vedle profesionálních vizualizací se věnuje rovněž výuce 3D grafiky, tvorbě 3D modelů, fotografování, kresbě a animacím. 
+
+          </p>   
+          <script src="./js/rot13.js" type="text/javascript"></script>  
+          <p>
+          <strong>tel: 605 389 440</strong>
+         </p> 
+           
+           
+           <p>
+          <strong>e-mail: <script src="./js/mail.js" type="text/javascript"></script> </strong>
+         </p>  
+      </div> 
+      
+      
+      </div>       <!-- END of the Light grey background -->
+     
+     
+     
+     
+     
+
+   
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>   <!-- Jquery -->
+    
+    <!-- Script for the fixed navigation bar -->
+    <script>
+        $(window).scroll(setInterval(function() {
+            if ($(this).scrollTop() > 288){  
+                $('header').addClass("sticky");
+            }
+            else{
+                $('header').removeClass("sticky");
+            }
+        }, 100));;
+    </script>
+   
+         
+    
+    </body>
+</html>
